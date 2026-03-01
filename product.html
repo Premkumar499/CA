@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav>
+    <a href="home.html">
+        <img src="assets/amazon_logo.png" width="100">
+    </a>
+
+    <div class="nav_contry">
+        <img src="assets/location_icon.png" height="20">
+        <div>
+            <p>Deliver to</p>
+            <h1>United Kingdom</h1>
+        </div>
+    </div>
+
+    <div class="nav_search">
+        <div class="nav_search_category">
+            <p>All</p>
+            <img src="assets/dropdown_icon.png" height="12">
+        </div>
+        <input type="text" class="nav_search_input" placeholder="Search Amazon">
+        <img src="assets/search_icon.png" class="nav_search_icon">
+    </div>
+
+    <div class="nav_language">
+        <img src="assets/us_flag.png" width="25">
+        <p>EN</p>
+    </div>
+
+    <div class="nav_text">
+        <p>Hello, Sign in</p>
+        <h1>Account & Lists</h1>
+    </div>
+
+    <div class="nav_text">
+        <p>Return</p>
+        <h1>& Orders</h1>
+    </div>
+
+    <a href="order.html" class="nav_cart">
+        <img src="assets/cart_icon.png" width="35">
+        <h4>Cart</h4>
+    </a>
+</nav>
+
+<div class="nav_bottom">
+    <p>Today's Deals</p>
+    <p>Customer Service</p>
+    <p>Registry</p>
+    <p>Gift Cards</p>
+    <p>Sell</p>
+</div>
+
+    <div class="collection_of_all">
+        <h2>Our Products</h2>
+        <div id="productContainer" class="product-container">
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="assets/1.jpg" alt="CrossBeats Armour Pro AI Premium Smart Watch for Men">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">CrossBeats</div>
+                <div>CrossBeats Armour Pro AI Premium Smart Watch for Men</div>
+                <div class="rating">4.5 ⭐⭐⭐⭐☆ (159)</div>
+                <div class="bought">300+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹5999</span>
+                    <span class="mrp">₹19999</span>
+                    <span class="discount">(70% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(1)">Add to cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="assets/2.jpg" alt="Fastrack MYND 1.93 AMOLED Smart Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Fastrack</div>
+                <div>Fastrack MYND 1.93" AMOLED Smart Watch</div>
+                <div class="rating">3.8 ⭐⭐⭐⭐☆ (834)</div>
+                <div class="bought">200+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹3999</span>
+                    <span class="mrp">₹5499</span>
+                    <span class="discount">(27% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(2)">Add to cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="assets/3.jpg" alt="Daniel Lechter Paris Modern Analog Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Daniel Lechter</div>
+                <div>Daniel Lechter Paris Modern Analog Watch</div>
+                <div class="rating">4.3 ⭐⭐⭐⭐☆ (1000)</div>
+                <div class="bought">2K+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹2679</span>
+                    <span class="mrp">₹4950</span>
+                    <span class="discount">(45% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(3)">Add to cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="assets/4.jpg" alt="Titan Neo Stainless Steel Analog Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Titan</div>
+                <div>Titan Neo Stainless Steel Analog Watch</div>
+                <div class="rating">4.6 ⭐⭐⭐⭐☆ (2450)</div>
+                <div class="bought">500+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹4999</span>
+                    <span class="mrp">₹7999</span>
+                    <span class="discount">(37% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(4)">Add to cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="assets/5.jpg" alt="Noise ColorFit Ultra 3 Bluetooth Calling Smartwatch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Noise</div>
+                <div>Noise ColorFit Ultra 3 Bluetooth Calling Smartwatch</div>
+                <div class="rating">4.1 ⭐⭐⭐⭐☆ (3200)</div>
+                <div class="bought">1K+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹3499</span>
+                    <span class="mrp">₹5999</span>
+                    <span class="discount">(41% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(5)">Add to cart</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="assets/6.jpg" alt="boAt Wave Call Smart Watch with HD Display">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">boAt</div>
+                <div>boAt Wave Call Smart Watch with HD Display</div>
+                <div class="rating">4.0 ⭐⭐⭐⭐☆ (4100)</div>
+                <div class="bought">800+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹1799</span>
+                    <span class="mrp">₹3990</span>
+                    <span class="discount">(54% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(6)">Add to cart</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="assets/7.jpg" alt="Fire-Boltt Phoenix Pro Bluetooth Calling Smartwatch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Fire-Boltt</div>
+                <div>Fire-Boltt Phoenix Pro Bluetooth Calling Smartwatch</div>
+                <div class="rating">4.2 ⭐⭐⭐⭐☆ (2800)</div>
+                <div class="bought">900+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹1999</span>
+                    <span class="mrp">₹4999</span>
+                    <span class="discount">(60% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(7)">Add to cart</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="assets/8.jpg" alt="Casio Vintage Digital Grey Dial Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Casio</div>
+                <div>Casio Vintage Digital Grey Dial Watch</div>
+                <div class="rating">4.7 ⭐⭐⭐⭐☆ (5200)</div>
+                <div class="bought">1.5K+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹2295</span>
+                    <span class="mrp">₹3495</span>
+                    <span class="discount">(34% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(8)">Add to cart</button>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="card">
+                <img src="assets/9.jpg" alt="CrossBeats Armour Pro AI Premium Smart Watch for Men">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">CrossBeats</div>
+                <div>CrossBeats Armour Pro AI Premium Smart Watch for Men</div>
+                <div class="rating">4.5 ⭐⭐⭐⭐☆ (159)</div>
+                <div class="bought">300+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹5999</span>
+                    <span class="mrp">₹19999</span>
+                    <span class="discount">(70% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(9)">Add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="assets/10.jpg" alt="CrossBeats Armour Pro AI Premium Smart Watch for Men">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">CrossBeats</div>
+                <div>CrossBeats Armour Pro AI Premium Smart Watch for Men</div>
+                <div class="rating">4.5 ⭐⭐⭐⭐☆ (159)</div>
+                <div class="bought">300+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹5999</span>
+                    <span class="mrp">₹19999</span>
+                    <span class="discount">(70% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(1)">Add to cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="assets/11.jpg" alt="Fastrack MYND 1.93 AMOLED Smart Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Fastrack</div>
+                <div>Fastrack MYND 1.93" AMOLED Smart Watch</div>
+                <div class="rating">3.8 ⭐⭐⭐⭐☆ (834)</div>
+                <div class="bought">200+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹3999</span>
+                    <span class="mrp">₹5499</span>
+                    <span class="discount">(27% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(2)">Add to cart</button>
+            </div>
+
+            
+
+            <!-- Product 10 -->
+            <div class="card">
+                <img src="assets/12.jpg" alt="Fastrack MYND 1.93 AMOLED Smart Watch">
+                <div class="sponsored">Sponsored</div>
+                <div class="title">Fastrack</div>
+                <div>Fastrack MYND 1.93" AMOLED Smart Watch</div>
+                <div class="rating">3.8 ⭐⭐⭐⭐☆ (834)</div>
+                <div class="bought">200+ bought in past month</div>
+                <div class="deal">Limited time deal</div>
+                <div class="price-section">
+                    <span class="price">₹3999</span>
+                    <span class="mrp">₹5499</span>
+                    <span class="discount">(27% off)</span>
+                </div>
+                <div class="delivery">
+                    FREE delivery <b>Mon, 2 Mar</b><br>
+                    Or fastest delivery <b>Sun, 1 Mar</b>
+                </div>
+                <button onclick="addToCart(10)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(productId) {
+            alert('Product ' + productId + ' added to cart!');
+            // TODO: Implement proper cart functionality
+        }
+    </script>
+</body>
+</html>
